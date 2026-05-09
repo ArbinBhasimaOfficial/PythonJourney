@@ -144,11 +144,89 @@ Chapter 1: Python Basics
                     
 
 
-
-
-
-
 Chapter 2: Flow Control
+    2.1 Flow Control Statements 
+        Flow Control can decide which python instructions to execute under which conditions
+        Flow Control directly correspond to the symbols in a flowchart..
+
+        Flow chart for what to do if it's raining.
+        Follow the path made by arrows from start to end:
+         
+        
+
+                                        no  -> Go Outside -> end
+            start ->    Is raining? ->                      yes ->  Go Outside -> end     
+                                        yes -> Have Umbrella                                   no -> Go Outside -> end
+                                                            no  ->  Wait a While -> is raining?
+                                                                                               yes -> wait a while (loop) -> and so on     
+            Fig : flowchart
+
+        Before learning Flow Chart Control 
+
+    2.2 Need to Understand Boolean Values (Yes and No) options
+
+        Boolean Data type
+        Boolean Values: Boolean Values have only two values that is 
+            TRUE  represent as True, yes, 1 and so on
+            FALSE represent as False, no, 0 and so on
+
+    2.3 Comparison Operators
+
+        Comparison Operators compare two values and evaluates down to a single Boolean value.
+        
+        Operator    Meaning
+        ==          Equal to
+        !=          Not Equal to
+        <           Less than
+        >           Greater than
+        <=          less than or equal to
+        >=          Greater than or eual to
+
+        This Operators evaluates to True and False depending on the values you give them...
+
+        Can be use on any data types...
+
+        The Difference Between == AND = operators
+            The == operator (equal to) asks whether two values are the same as each other
+            The = operator (assignment) puts the value on the right into the variable on the left
+
+    2.4 Boolean Operators
+        Binary Boolean Operators
+        True and True is True
+        True and False is False
+
+        The and Operator's Truth table
+        Expression      Evaluates to...
+        True and True   True
+        True and False  False
+        False and True  False
+        False and False False
+
+        The or Operator;s Truth Table
+        Expression      Evaluates to...
+        True or True    True
+        True or False   True
+        False or True   True
+        False or False  False
+
+        The not Operator
+
+        Not True => False
+        
+        not not not not True => True
+        Expression      Evaluates to...
+        Not True        False
+        Not False       True
+
+
+
+        
+
+
+
+
+
+
 
 
 Chapter 3: Functions
