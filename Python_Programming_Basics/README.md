@@ -27,9 +27,15 @@ Python_Programming_Basics/
 - **Variables** - Naming conventions, snake_case
 - **Built-in Functions** - `print()`, `input()`, `len()`, `str()`, `int()`, `float()`, `round()`
 
-### Chapters 2-6 (In Progress)
+### Chapter 2: Flow Control (Completed)
 
-- [ ] Chapter 2: Flow Control
+- **Boolean Values** - True and False
+- **Comparison Operators** - `==`, `!=`, `<`, `>`, `<=`, `>=`
+- **Boolean Operators** - `and`, `or`, `not`
+- **Truth Tables** - AND, OR, NOT logic
+
+### Chapters 3-6 (In Progress)
+
 - [ ] Chapter 3: Functions
 - [ ] Chapter 4: Lists
 - [ ] Chapter 5: Dictionaries and Structuring Data
@@ -50,6 +56,7 @@ python answers.py
 
 ## Key Concepts Learned
 
+### Chapter 1
 | Concept | Example |
 |---------|---------|
 | Expression | `2 + 2` evaluates to `4` |
@@ -57,3 +64,12 @@ python answers.py
 | String replication | `"spam" * 3` |
 | Type conversion | `str(99)`, `int("42")` |
 | Variable assignment | `age = 23` |
+
+### Chapter 2
+| Concept | Example |
+|---------|---------|
+| Boolean values | `True`, `False` |
+| Comparison | `42 > 100` is `False` |
+| AND logic | `True and False` is `False` |
+| OR logic | `True or False` is `True` |
+| NOT | `not True` is `False` |
