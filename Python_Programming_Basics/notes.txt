@@ -1,0 +1,163 @@
+I learned from the Very Cool Book:
+    Automate the Boring Stuff with Python
+        Al Sweigart
+
+This is the beginning of my journey of :
+    Learning Python Full Fledgedly..
+
+In this folder: Python_Programming_Basics contains
+
+Part I: Python Programming Basics
+
+Chapter 1: Python Basics
+    1. Expression
+    Expression => contains => values such as 2 and operators such as + and they can always evaluate (that is reduce) to a single value.
+    I.E Expression can be used anywhere where there consist the value.
+    example: 2 + 2 => 4 which is single value.
+    A single value with no operators is also considered as expression, though it evaluates itself.
+    example: 2 => 2
+
+    Errors are okay! thats how you learn.
+
+    2. Math Operators from Highest to Lowest Precedence
+
+    Operator    Operation                           Example     Evaluates to...
+    **          Exponent                            2 ** 3      8
+    %           Modules/remainder                   22 % 8      6
+    //          Integer devision/ floored quotient  22 // 8     2
+    /           Devision                            22 / 8      2.75
+    *           Multiplication                      3 * 5       15
+    -           Subtraction                         5 - 2       3
+    +           Addition                            2 + 2       4
+
+
+    3. Precedence
+
+    ** -> *, /, // and % (from left to right) -> + and - (from left to right)
+    use parenthesis () to override the usual precedence.
+    example: 2 + 3 * 6 / (2 + 3) * 6 => 20 / 30 respectively 
+
+    4. Data Types
+        The Integer
+            eg : -2, -1, 0, 1, 2, 3, 4, 5, etc
+        Floating Point
+            eg: -1.25, -1.0, -0.5, 0.0, 0.5, 1.0, 1.25, etc
+        String
+            eg: 'a', 'aa', 'aaa', 'Hello!', '11 cats', etc
+            text values called strings, or strs
+            Always surround string with '' or "" as in
+            "Hello" or "Hello bro this is heaven you have died.."
+            stings with no character init '' is called blanked string
+            if ' is missing errors shows EOL while scanning string literal
+            eg 'hello
+
+
+    5. String Concatenation and replication
+
+        Concatenation (When + operator is used in string it is called concatenation cuz it joins the strings)
+            "Arbin" + " " + "Bhasima"
+            Arbin Bhasima
+
+            if 
+            'Arbin' + 777
+            This throws error becuase strings and integers cannot be concatenate nor add
+             error msg says : 
+                Can't convert 'int' object ro str implicitly
+
+        Replication (when * operator is used the string is replicated)
+            "Arbin" * 2
+            ArbinArbin
+
+            two strings cannot be replicated 
+            'bob' * 'marley'
+            this throws error :
+            can't multiply sequence by non-int of type 'str'
+
+            String and float cannot be multiplied as well 
+            'Alice' * 5.0
+            can't multiply sequence by non-int of type 'float'
+
+    6. Storing Values in Variables
+        Variable is like a box in the computers memory where you can store a single value.
+        If you want to use the result of an evaluated expression later in program, you can save it inside a variable.
+
+            Assignment Statementts
+                An Assignment Statementts consists of a vaiable name, an eual sign and the value to be stored.
+                syntax is :
+                    Variable_name = value
+                for eg: 
+                    Name = "Arbin"
+                    age = 23
+            
+            Variable Names
+                Only one word:
+                    last name : this is not correct
+                    lastname
+                    last_name
+                variable name cannot be started as number
+                
+                Valid variable names    Invalid Variable names
+                balance                 Current-balance (hyphens (-) are not allowed)
+                currentbalance          current balance (spaces are not allowed)
+                current_balance         4account (can't begin with number)
+                _spam                   42 (can't begin with number)
+                SPAM                    total_$um (Special characters like $ are not allowed)
+                account4                'hello' (special characters like ' are not allowed)
+
+
+            spam, SPAM, Spam, sPaM are four different variables name
+
+            python ma chain naming conventions haru jailai nai small case bata suru hunxa 
+            
+            underscore _ kina kam lagxa
+
+            for e.g:
+            looking_like_this
+            date_of_birth
+            lots_of_love
+            laughing_out_loud
+            _lol
+            _dob
+
+            a good variable names describes what data is stored in them...
+
+    7. Create a first Program
+        hello world -> ask user name -> find length of user name -> ask user age -> find the next year age of the user
+
+        Text and number equivalance
+
+        42 == '42'
+        False
+
+        42 == 42.0
+        True
+
+        42.0 == 0042.000
+        True
+    
+    8. Practice Questions.
+    qn 1 to 10 in answers.py file
+
+
+    Extra Credit : len() , look up round() 
+
+                    
+
+
+
+
+
+
+Chapter 2: Flow Control
+
+
+Chapter 3: Functions
+
+
+Chapter 4: Lists
+
+
+Chapter 5: Dictionaries and Structuring Data
+
+
+Chapter 6: Manipulating Strings
