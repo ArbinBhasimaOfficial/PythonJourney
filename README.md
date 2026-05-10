@@ -33,6 +33,8 @@ Python_Programming_Basics/
 - **Comparison Operators** - `==`, `!=`, `<`, `>`, `<=`, `>=`
 - **Boolean Operators** - `and`, `or`, `not`
 - **Truth Tables** - AND, OR, NOT logic
+- **if Statements** - Conditional execution
+- **else Statements** - Default fallback case
 
 ### Chapters 3-6 (In Progress)
 
@@ -73,3 +75,4 @@ python answers.py
 | AND logic | `True and False` is `False` |
 | OR logic | `True or False` is `True` |
 | NOT | `not True` is `False` |
+| if//else | `if x > 0: ... else: ...` |
