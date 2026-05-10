@@ -1,7 +1,7 @@
 # boolean data type
 
-spam = True
-print(spam) #True
+# spam = True
+# print(spam) #True
 
 # error
 # spam1 = true
@@ -40,3 +40,12 @@ print(spam) #True
 # print(bool(spam >= trash)) # False
 # print(bool(eggCount<=100)) # False
 # print(bool(eggCount>=100)) # True
+
+# flow control statement
+# if statement
+name = input()
+if name == 'arbin':
+    print('Konichiwa, aniki.')
+# else statement
+else:
+    print('Dare yo, Omaye wa!')

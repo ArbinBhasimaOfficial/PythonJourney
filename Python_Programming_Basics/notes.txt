@@ -214,9 +214,119 @@ Chapter 2: Flow Control
         Not True => False
         
         not not not not True => True
+
+        The not Operator's Truth Table
+
         Expression      Evaluates to...
         Not True        False
         Not False       True
+
+    2.5 Mixing Boolean and Comaparison Operators
+        ( 4 < 5 ) and ( 5 > 6 )
+        True
+        ( 4 < 5 ) and ( 9 < 6 )
+        False
+        ( 1 == 2 ) or ( 2 == 2 )
+        True
+        2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
+        True
+
+    2.6 Elements of Flow Control
+
+        Flow control statement often starts with a part called the conditions,
+
+        followed by block of code called the clause
+
+        Consitions
+            The Boolean expressions could all be considered as conditions which are same thing as expressions
+
+            conditions is just a more specific name in contect of Flow control statement
+
+            Conditions always evaluate down  to a Boolean value
+                True
+                False
+
+            A Flow Control Statement decides what to do based on whether its condition is True or False
+            and almost every flow control statement uses a condition
+
+
+        Blocks of code
+            lines of python code can be grouped together in Blocks
+            from indentation of the line of code you can tell when block begins and {% endspaceless %}
+
+                Three Rules for Blocks:
+                1. Blocks begin when the indentation increases
+                2. Blocks can contain other blocks
+                3. Blocks end when the indentation decreases to zero or to a containing blocks indentation
+            
+            eg:
+
+            if name == 'Bob':
+                print('Who?')
+            if password == 'swordfish':
+                print('Access granted.')
+            else:
+                print('wrg password')
+
+        Program Execution
+            top to down, one after another 
+            The program execution is a term for the current instruction being executed
+
+    2.7 Flow Control Statements
+        statements represent diamond you see in flow chart true / false, yes / no, etc
+
+
+        if Statements  
+            most common type of flow control statement 
+            if statement clause ( the block following the if statement ) will execute 
+            if the statement's condition is True.
+            The clause is skiped if the condition is False
+
+            in english terminology " If this condition is true, execute the code in the clause "
+
+            if statement consists of :
+                the if keyword
+                A Condition ( an expression that evaluate to True or False )
+                A colon
+                Starting on the nexr line, an indented block of code ( called if clause )
+
+                For example:
+                    if name == 'Arbin':
+                        print('Hi, Boss.')
+
+            The flowchart for an if Statement
+
+                                            True    ->  print('Hi, Boss.')   ->  end
+                Start ->    name == 'Arbin' 
+                                            False   ->  end
+
+        else Statements
+            of clause can optionally be followed by an else statement.
+            else clause is executed only when the if statement's condition is False
+            in english terminology
+                If this condition is true, execute this code. Or else, execute that code
+
+            else statement contains:
+                The else keyword
+                A colon
+                Starting on the next line, an indented block of code ( else clause )
+
+                for example:
+                    if name == 'Arbin':
+                        print('Hi, Boss.')
+                    else:
+                        print('Dare yo, Omaye wa!')
+            
+            The flow chart os this code looks like this
+
+                                        True    ->  print('Hi, Boss.')  ->  end
+            Start   ->  name == 'arbin' 
+                                        False   ->  print('Dare yo, Omaye wa!') ->  end
+
+        elif Statements
+
+
+
 
 
 
