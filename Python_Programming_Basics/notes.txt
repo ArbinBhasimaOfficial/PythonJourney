@@ -324,6 +324,165 @@ Chapter 2: Flow Control
                                         False   ->  print('Dare yo, Omaye wa!') ->  end
 
         elif Statements
+            While only one of the if or else clause will execute, you may have a case where you want one of many possible clauses to execute
+            elif statements is an else if statement that always follows an if or another elif statement.
+            It provides another condition that is checked only if any of the previous conditions were false, in code, an elif statement always consists of the following
+
+            Contains:
+                elif keyword
+                a condition ( an expression that evaluates to True or False )
+                A colon
+                Starting on the next line, an indented block of code ( elif clause )
+
+                for example:
+                    if name == 'Arbin':
+                        print('Hi, Arbin.')
+                    elif age < 23:
+                        print('You are not Arbin, Who!....')
+
+            Flow chart
+
+
+                                        True    ->  print('Hi, Arbin.') ->  end
+            Start   ->  name == 'Arbin'                     True    ->  print("You are not Arbin, Who!....")    
+                                        False   ->  age < 23     
+                                                            False   ->  end
+
+
+            name = 'ZiziManon'
+            age = 101
+            if name == 'arbin':
+                print('Konichiwa, aniki.')
+            # elif statements
+            elif age < 23:
+                print('Anatawa arbin janai desu ne. Dare!.....')
+            elif age > 2000:
+                print('Aniki wa bakemono ja nai desu!')
+            elif age > 100:
+                print('Aniki wa kono kusobaba za nai desu!')
+            
+            FlowChart for the above block of code
+
+
+
+                                        True    ->  print('Konichiwa, aniki.')  ->  end
+            Start   ->  name == 'arbin'                     True    ->  print('Anatawa arbin janai desu ne. Dare!.....')    ->  end
+                                        False   ->  age < 23                        True    ->  print('Aniki wa bakemono ja nai desu!') ->  end  
+                                                            False   ->  age > 2000                      True ->  print('Aniki wa kono kusobaba za nai desu!')    ->  end  
+                                                                                    False   ->  age > 100
+                                                                                                        False   ->  end
+
+
+            if - elif - else
+                name = 'Zion'
+                age = 23
+                if name == 'arbin':
+                    print('Konichiwa, aniki.')
+                # elif statements
+                elif age < 23:
+                    print('Anatawa arbin janai desu ne. Dare!.....')
+                else:
+                    print('Dare yo, Omaye wa!')
+                    
+            
+            Flow Chart
+
+
+
+                                    True    ->  print('Konichiwa, aniki.')  ->  end  
+            Start -> name == 'Alice'                        True    ->  print('Anatawa arbin janai desu ne. Dare!.....')    ->  end    
+                                    False   ->  age <   23
+                                                            False   ->  print('Dare yo, Omaye wa!') ->  end  
+
+
+        While Loop Statements
+
+            You can make a block of code execute over and over again with a while statement.
+            The code in a while clause will be executed as long as the while statements condition is True
+            In code, a while statement always consists of the following:
+                The while keyword
+                A condition ( an expression that evaluates to True or False )
+                A colon
+                Starting on the next line, an indented block of code (called the while clause)
+
+            for e.g 
+                spam = 0
+                while spam < 5:
+                    print('Hello, world.')
+                    spam = spam + 1
+
+            Flow chart of example
+
+                            True    -> print('Hello, world.')  ->  spam = spam + 1 -> spam = spam + 1
+            start -> spam < 5
+                            False   -> end
+
+            
+            An Annnpying while loop
+            name = ''
+            while name != 'your name':
+                print("please type your name.")
+                name = input()
+            print('Thank You!')
+
+            if you never enter your name string the while loops will never be false and program will keep on asking
+            the input() call lets the user enter the right string to make the program move on.
+
+            break statements
+                it breaks out of a while loop clause early
+                it immediatly exists when reaching the break statement
+                break keyword
+
+            e.g with break
+                while True
+                    Print('Your Name: ')
+                    name = input()
+                    if name == 'your name':
+                        break
+                print('Thanks')
+
+            
+            continue statements
+                Like break, continue are used inside the loops
+                when reaching to continue statement
+                program execute immediatly jumps back to the start of the loop and reevaluates the loop's
+                condition
+                
+                
+            Trapped in an infinite loop??
+                ctrl - c 
+
+            e.g with break and continue Statements
+
+            while True:
+                print('Dare Desuka?')
+                name = input()
+                if name != 'zion':
+                    continue
+                print('Hello, zion-tan. passwordo wa nandei? (sakana desu!) ')
+                password = input()
+                if password == 'sakanaken':
+                    break
+                print('Access granted.')
+
+            Truthy AND Falsey values
+                when used in condition 0, 0.0, and '' the empty strings are considered as False, while all other values are considered True
+                for e.g:
+                name = ''
+                while not name:
+                    print('your name:')
+                    name = input()
+                print('how many guest will you have?')
+                numofGuests = int(input())
+                if numofGuests:
+                    print('enough room for guest?')
+                print('Down')
+
+                
+
+
+
+
 
 
 

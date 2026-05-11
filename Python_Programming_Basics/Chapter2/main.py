@@ -43,9 +43,50 @@
 
 # flow control statement
 # if statement
-name = input()
-if name == 'arbin':
-    print('Konichiwa, aniki.')
-# else statement
-else:
-    print('Dare yo, Omaye wa!')
+# name = 'Zion'
+# age = 23
+# if name == 'arbin':
+#     print('Konichiwa, aniki.')
+# # elif statements
+# elif age < 23:
+#     print('Anatawa arbin janai desu ne. Dare!.....')
+# # elif age > 2000:
+# #     print('Aniki wa bakemono ja nai desu!')
+# # elif age > 100:
+# #     print('Aniki wa kono kusobaba za nai desu!')
+# # else statement
+# else:
+#     print('Dare yo, Omaye wa!')
+
+
+# While Loop statements
+# spam = 0
+# if spam < 5:
+#     print('Hello Bro')
+#     spam = spam + 1
+
+# name = ''
+# while name != 'your name':
+#     print("please type your name.")
+#     name = input()
+# print('Thank You!')
+
+# with break
+# while True:
+#     print('Your Name: ')
+#     name = input()
+#     if name == 'your name':
+#         break
+# print('Thanks')
+
+
+while True:
+    print('Dare Desuka?')
+    name = input()
+    if name != 'zion':
+        continue
+    print('Hello, zion-tan. passwordo wa nandei? (sakana desu!) ')
+    password = input()
+    if password == 'sakanaken':
+        break
+print('Access granted.')

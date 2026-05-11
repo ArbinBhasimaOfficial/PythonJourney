@@ -11,6 +11,9 @@ Python_Programming_Basics/
 │   ├── main.py           # Core examples & syntax
 │   ├── answers.py        # Practice questions & round() examples
 │   └── venv/             # Virtual environment
+├── Chapter2/
+│   ├── main.py           # Flow control examples & exercises
+│   └── venv/             # Virtual environment
 ├── notes.txt             # Learning notes
 └── README.md
 ```
@@ -35,6 +38,11 @@ Python_Programming_Basics/
 - **Truth Tables** - AND, OR, NOT logic
 - **if Statements** - Conditional execution
 - **else Statements** - Default fallback case
+- **elif Statements** - Multiple conditions
+- **while Loops** - Repetition with condition
+- **break Statements** - Exit loop early
+- **continue Statements** - Jump back to loop start
+- **Truthy/Falsey Values** - 0, 0.0, '' are False; others are True
 
 ### Chapters 3-6 (In Progress)
 
@@ -76,3 +84,7 @@ python answers.py
 | OR logic | `True or False` is `True` |
 | NOT | `not True` is `False` |
 | if//else | `if x > 0: ... else: ...` |
+| elif | `if a: ... elif b: ... else: ...` |
+| while loop | `while x < 5: x += 1` |
+| break/continue | `break` exits loop early, `continue` jumps to start |
+| Truthy/Falsey | `bool(0)` is `False`, `bool('')` is `False` |
