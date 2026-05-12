@@ -477,28 +477,158 @@ Chapter 2: Flow Control
                 if numofGuests:
                     print('enough room for guest?')
                 print('Down')
+            
+        For loops and the range() Function
+            The while loop keeps looping while its condition is True.
+            but what if you want to execute a block of code only a certain number of time.
+            you can do this with a for loop statement and the range() function.
 
+            for loop contains
+                The for keyword
+                A variable name
+                The in keyword
+                A Call to the range() method with up to three integers passed to it
+                A colon
+                starting on the next line, an indented block of code
                 
+            for example    
+                print('Watashi no namaye')
+                for i in range(5):
+                    print('Manon Five Times (' + str(i) + ')')
+
+                you can use brake and continue on for loops as well. only inside while and for loop
 
 
+                total = 0 
+                for num in range(101):
+                    total = total + num
+                print(total)
+                
+        An equivalent while loop
+            you can use a while loop to do the same thing as a for loop
+            for loops are more concise than while loops
 
 
+        The Starting, Stopping and Stepping Arguments in range()
 
+            Some functions can be called with multiple arguments seperated by a comma, and range() is one of them...
+            This lets you change the integer passed to range() to follow any sequence of integers, including starting a number
+            other than zero
 
+            range(starting, stopping, stepping)
 
+            for i in range(12, 16):
+                print(i)
 
-
-
+    2.8 Importing Modules
+        All Python program can call a basic set of functions called:
+            Built in functions
+                Including print(), input(), and len()
         
+        Python also comes with a set of modules called the standard library
 
+        Each Module is a Python program that contains related group of functions that can be embedded in your programs.
+        for e.g math module has mathematics related functions the random module has random number related functions and 
+        so on.
 
+            import statement consists of the following
+                The import keyword
+                The name of the module
+                Optionally more module names as long as they are seperated by commas
+            
+                for e.g with random module
+                import random
+                for i in range(5):
+                    print(random.randint(1, 10))
+                
+                random.randint() function call evaluates to a random integer value between the two integers that you pass it.
+                most type random. to call the functions
 
+                example of an import statement that imports four different Modules
+                    import random, sys, os, math
 
+            form import Statements
+                An alternative form of the import statement is composed of from keyword followed by the modules name
+                the import keyword and a star; for example
 
+                    from random import *;
+                    
+                    this form of import statement calls to functions in random will not need the random. prefix. However using the full name makes for more
+                    readable code 
+                    so it is better ti use normal form of import statement that is without from keyword
 
+    2.9 Ending a Program Early with sys.exit()
+        The last flow control statement concept to cover is how to terminate the program
+
+        for e.g 
+        import sys
+
+        while True:
+            print('Type exit to exit.')
+            response = input()
+            if response == 'exit':
+                sys.exit()
+            print(' You typed ' + response + '.')   
+
+    Practice Questions answers are in answers.py
+
+    Extra credits look up 
+        round()
+        abs()
 
 
 Chapter 3: Functions
+    You can write your own functions.. like built in function such as print(), input(), len()
+
+    A function is like a mini-program within a program
+    Hello function
+        def hello():
+            print('howdy!')
+            print('howdy!!')
+            print('moshi moshi!')
+
+        hello()
+        hello()
+        hello()
+
+    the first line is a def statement, which defines a function named hello()
+    the code in the block that follows the def statement is the body of the function.
+
+    hello() lines after then function are function calls
+
+
+    A major purpose of the function is to group code that gets executed multiple times.
+    with out the function defined, you have to copy paste each time.
+    and the program would look like this
+        print('howdy!')
+        print('howdy!!')
+        print('moshi moshi!')print('howdy!')
+        print('howdy!!')
+        print('moshi moshi!')print('howdy!')
+        print('howdy!!')
+        print('moshi moshi!')
+
+    you should always remove the duplicated code to make it better readable
+
+    3.1 def Statement with Parameters
+        def hello(name):
+            print('konichiwa ' + name)
+
+        hello('Zion')
+        hello('Arbin')
+
+        the definition of hello function has name Parameters
+        the parameter is a variable that an arguments is stored in when a function is called
+        when hello('Zion') function is called it is called with the argument 'Zion'
+        the program execution enters the function and the variable name is set to the 'Zion' automatically
+
+        so the print is printed as bellow
+            konichiwa Zion
+            konichiwa Arbin
+        
+        
+
+
 
 
 Chapter 4: Lists

@@ -13,6 +13,12 @@ Python_Programming_Basics/
 │   └── venv/             # Virtual environment
 ├── Chapter2/
 │   ├── main.py           # Flow control examples & exercises
+│   ├── answers.py        # Practice questions
+│   ├── exitExample.py    # exit() function example
+│   ├── printRandom.py    # Random number examples
+│   └── venv/             # Virtual environment
+├── Chapter3/
+│   ├── main.py           # Function examples
 │   └── venv/             # Virtual environment
 ├── notes.txt             # Learning notes
 └── README.md
@@ -44,9 +50,17 @@ Python_Programming_Basics/
 - **continue Statements** - Jump back to loop start
 - **Truthy/Falsey Values** - 0, 0.0, '' are False; others are True
 
-### Chapters 3-6 (In Progress)
+### Chapter 3: Functions (In Progress)
 
-- [ ] Chapter 3: Functions
+- **def Statements** - Creating functions with parameters
+- **return Values** - Returning values from functions
+- **None Value** - The None datatype
+- **Arguments vs Parameters** - Understanding the difference
+- **Local vs Global Scope** - Variable scope rules
+- **try/except Statements** - Handling errors
+
+### Chapters 4-6 (Pending)
+
 - [ ] Chapter 4: Lists
 - [ ] Chapter 5: Dictionaries and Structuring Data
 - [ ] Chapter 6: Manipulating Strings
@@ -88,3 +102,11 @@ python answers.py
 | while loop | `while x < 5: x += 1` |
 | break/continue | `break` exits loop early, `continue` jumps to start |
 | Truthy/Falsey | `bool(0)` is `False`, `bool('')` is `False` |
+
+### Chapter 3
+| Concept | Example |
+|---------|---------|
+| Function definition | `def hello(name):` |
+| Function call | `hello('Arbin')` |
+| Parameters | `def hello(name)` - `name` is a parameter |
+| Arguments | `hello('Zion')` - `'Zion'` is an argument |
