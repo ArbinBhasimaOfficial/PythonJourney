@@ -625,9 +625,192 @@ Chapter 3: Functions
         so the print is printed as bellow
             konichiwa Zion
             konichiwa Arbin
-        
+    
+    3.2 Return Values and return Statements
+        The len() function and passing the argument such as 'hello'
+        the function evaluates to the integer value 5,
+        which is the length of the string you passed it
+        the value that a function call evaluates to is called 
+        the return value of the function
         
 
+        Return statement is consisted of
+            The return keyword
+            the value or expression that the function should return
+
+            for e.g 
+            in magic8Ball.py
+
+            1. Python first imports the random module.
+            2. getAnswer() function is defined
+            3. The program execution moves to the top of the getAnswer()
+            4. The random.randint() function is called with two arguments, 1 and 9
+            5. the getAnswer() function is called with r as argument
+            5. the program ececution return to the line at the bottom of program that originally called getAnswer()
+            6. the returned string is assigned to a variable named fortune, which then gets passed tp a print() call
+
+            shorten the three lines after function to one single line for better readability and faster execution
+            print(getAnswer(random.randint(1,9)))
+
+    3.3 The None Values
+        None is the value, which represents the absence of a value.
+        None is the only value of the NoneType data types...
+        Just like Boolean True and False values, None must be with a capital None
+
+        Value-without-a-value can be helpful when you need to store something that won't be
+        confused for a real value in a variable.
+        One place where None is used is as the return value of print()
+
+        for e.g
+        spam = print('Hello')
+        Hello!
+        None == spam
+        True
+
+    3.4 Keyword Arguments and print()
+        Most arguments are identified by their position in the function call. 
+        for e.g 
+            random.randint(1, 10) is different from (10, 1)
+        The function call random.randint(1, 10) will return a random integer betn 1 and 10
+        becuase the firsst argument is the low end of the range ang the second is the high end
+
+        keyword arguments are identified by the keyword put before the function call
+        keyword arguments are often used for optional parameters 
+        for e.g
+            print() have optional parameters such as end and sep which represents printed at end and what seperates them
+            there are more such as file, flush with their specifiv features
+            for end
+            print('hello', end='')
+            print('world')
+                output is helloworld
+
+            for sep
+            print('cat', 'dog', sep=',')
+                output is cat,dog
+
+                Common Built in function
+                Function,Most Important Optional Parameters,Description
+                print(),"sep, end, file, flush",sep defaults to a space; end defaults to a newline (\n).
+                sorted(),"key, reverse",key takes a function to customize sort logic; reverse is a boolean.
+                enumerate(),start,Defines the beginning index (defaults to 0).
+                round(),ndigits,The number of decimal places to round to.
+                int(),base,"If the first argument is a string, you can specify the number base (e.g., 2, 8, 16)."
+                open(),"mode, encoding, errors, newline",mode defaults to 'r' (read); encoding is vital for text files.
+                range(),"start, step","If one arg is given, it's stop. If two, they are start, stop."
+                getattr(),default,Prevents an AttributeError if the attribute doesn't exist.
+
+                Categorized List of Built-ins
+                There are 71 built-in functions in Python 3.12+. Here is a categorized overview:
+
+                1. Data Type Conversions
+                bool(x)
+
+                dict(kwargs), dict(mapping, kwargs)
+
+                float(x)
+
+                int(x, base=10)
+
+                list(iterable)
+
+                set(iterable)
+
+                str(object='', encoding='utf-8', errors='strict')
+
+                tuple(iterable)
+
+                2. Sequence & Iteration
+                filter(function, iterable): Filters elements.
+
+                map(function, iterable, ...): Applies function to every item.
+
+                max(arg1, arg2, *args, key=None): Or max(iterable, default=obj, key=func).
+
+                min(arg1, arg2, *args, key=None): Same signature as max.
+
+                sum(iterable, start=0): Adds items of an iterable from left to right.
+
+                zip(*iterables, strict=False): The strict parameter ensures all iterables are the same length.
+
+                3. Object & Introspection
+                dir([object]): Without arguments, returns the list of names in the current local scope.
+
+                help([object]): Invokes the built-in help system.
+
+                id(object): Returns the "identity" of an object.
+
+                isinstance(object, classinfo): Checks if an object is an instance of a class.
+
+                type(object) or type(name, bases, dict): Returns the type or creates a new type object.
+
+                4. Mathematical
+                abs(x): Absolute value.
+
+                divmod(a, b): Returns (a // b, a % b).
+
+                pow(base, exp, mod=None): Returns (baseexp) % mod.
+
+    3.5 Local and Global Scope
+
+        Parameters and variables that are assigned in a called function are said to exist in that functions local scope.
+        Variables that are assigned out side all functions are said to exist in the global scope.
+        The variable that exists in a local scope is called local variable
+        while a variable that exists in the global scope is called global variable
+
+        A variable must be one or the other it cannot be both local and global
+
+        Scope is an container for variables
+        when a scope is destroyed, 
+        all the values stored in the scope variables are forgottern.
+        There is only one global scope, and its created when your program begins.
+        program terminates then the global scope is destroyed and all its variable are forgottern.
+        Otherwise the next time you ran your program the variables would remember their values from the last time you ran it
+
+        scope matters for several reasons:
+            Code in the global scope cannot use any local variables
+            However, a local scope can access global Variables
+            Code in a function local scope cannot use variables in any other local scope
+            You can use the same name for different variables if they are in different scopes.
+            There can be a local variable named spam and a global variable also named spam.
+
+            different scopes instead of just making every thing a global variable is so that when variable
+            are modified by the code in a call to a function, the function interacts with the rest of the program
+            only thaught its parameters and the return value 
+
+            This narrows down the list code lines that may be causing
+
+            Local Variables Cannot Be Used in the Global Scope
+                def spam():
+                    eggs = 34337
+                    
+                spam()
+                print(eggs) this line will throw the error
+
+            Local Scopes Cannot use variables in other local scope
+                # def spam():
+                #     eggs = 99
+                #     bacon()
+
+                # def bacon():
+                #     ham = 101
+                #     eggs = 0
+
+                # spam()
+
+                1. local variable eggs is set to 99
+                2. bacon() function is called
+                3. execution continues in the spam() function to print the value of eggs
+                4. local variable ham is set to 101 and eggs which is different from spam()
+                5. the spam() is called
+
+            Global variables can be read from a local Scope
+
+                # def spam():
+                #     print(eggs)
+
+                # eggs = 42
+                # spam()
+                # print(eggs)
 
 
 

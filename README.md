@@ -19,6 +19,7 @@ Python_Programming_Basics/
 │   └── venv/             # Virtual environment
 ├── Chapter3/
 │   ├── main.py           # Function examples
+│   ├── magic8Ball.py     # Magic 8-Ball program with return values
 │   └── venv/             # Virtual environment
 ├── notes.txt             # Learning notes
 └── README.md
@@ -50,7 +51,7 @@ Python_Programming_Basics/
 - **continue Statements** - Jump back to loop start
 - **Truthy/Falsey Values** - 0, 0.0, '' are False; others are True
 
-### Chapter 3: Functions (In Progress)
+### Chapter 3: Functions (Completed)
 
 - **def Statements** - Creating functions with parameters
 - **return Values** - Returning values from functions
@@ -76,6 +77,12 @@ cd Chapter1\venv
 python firstprogram.py
 python main.py
 python answers.py
+
+# Chapter 3
+cd Chapter3\venv
+.\Scripts\Activate.ps1
+python magic8Ball.py
+python main.py
 ```
 
 ## Key Concepts Learned
@@ -110,3 +117,8 @@ python answers.py
 | Function call | `hello('Arbin')` |
 | Parameters | `def hello(name)` - `name` is a parameter |
 | Arguments | `hello('Zion')` - `'Zion'` is an argument |
+| return statement | `return 42` returns a value |
+| None | `print()` returns `None` |
+| Keyword arguments | `print('hi', end='')` |
+| Local scope | Variables inside function |
+| Global scope | Variables outside functions |
